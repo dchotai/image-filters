@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>Image Filters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Image Filters</h1>
+    <h2>*Image source must be CORS-compliant (security restrictions). I recommend using images from Imgur or Wikimedia.</h2>
+    <input type="text" id="query" placeholder="https://upload.wikimedia.org/wikipedia/commons/3/32/House_sparrow04.jpg">
+    <br>
+    <form>
+        <input type="radio" name="filter" onclick="draw('original')"> Original
+        <input type="radio" name="filter" onclick="draw('inverted')"> Inverted
+        <input type="radio" name="filter" onclick="draw('grayscale')"> Grayscale
+        <input type="radio" name="filter" onclick="draw('split')"> Split
+    </form>
+    <canvas id="canvas"></canvas>
+    <script src="filters.js"></script>
+</body>
+</html>
